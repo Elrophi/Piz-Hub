@@ -2,7 +2,7 @@
 
 ```An online pizza app that let's you select your favorite type of pizza and get it delivered to your location or picked by you!```
 
->## Author: [El-rophi Skwaila](https://elrophi.github.io/DELANI/.)
+>## Author: [El-rophi Skwaila](https://elrophi.github.io/Piz-Hub/.)
 ---
 ___\*Click on author's name to access live-site*___
 
