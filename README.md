@@ -56,6 +56,4 @@ $(document).ready(function(){
 ---
 
 ### Copyright and License
-[MIT License](https://github.com/Elrophi/DELANI/blob/master/LICENSE)
-
-  
+[MIT License](https://github.com/Elrophi/Piz-Hub/blob/master/LICENSE)  
