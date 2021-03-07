@@ -30,8 +30,8 @@ ___\*Click on author's name to access live-site*___
 |Select Size  | small |
 |Select Crust |  crust 1|
 |Select Toppings| toppings 3|
-|Click Order   |   Make more orders  |    |
-|Click CHECKOUT |         |      |
+|Click Order   |   Prompt number of orders  | Form with details   |
+|Click CHECKOUT |  Delivery or NOT       | All complete details with user details      |
 
 ---
 >Function used in the project
