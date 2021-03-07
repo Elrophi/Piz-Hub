@@ -18,7 +18,7 @@
     color: white;
 }
 
-form{
+.form-slide{
     opacity: 0.9; 
     width:50%; 
     height: 50%; 
@@ -35,12 +35,26 @@ form{
     /* min-height: 70vh; */
 }
 
-
+.form-pop{
+    display: none;
+    opacity: 1; 
+    width:50%; 
+    height: 70%; 
+    margin-left:auto; 
+    margin-right:auto; 
+    padding: 20px; 
+    background-color:#127453;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2em;
+}
 
 .custom-select{
     text-indent: 30px;
 }
-
 
 
 /* Landscape tablets and medium desktops */

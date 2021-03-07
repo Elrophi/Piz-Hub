@@ -20,3 +20,16 @@ $(document).ready(function(){
         $('.btn').show("slow")
     });
 })
+
+
+
+function myForm(){
+    event.preventDefault()
+    document.getElementById('popForm').style.display = "block";
+}
+
+function exitForm(){
+    event.preventDefault()
+    document.getElementById('popForm').style.display = "none";
+
+}
