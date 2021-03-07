@@ -28,6 +28,9 @@ function Pizza(size, crust, topping){
     this.topping = topping;
 }
 
+Pizza.prototype.fullPizza = function(){
+    return this.size + "\n";
+}
 
 function myForm(){
     event.preventDefault()
@@ -38,14 +41,25 @@ function myForm(){
 
     let piz = new Pizza(mySize, myCrust, myTop);
     if(mySize == "0"){
-        alert('please select size')
+        alert('please select a size')
     }else{
+    // document.getElementById('popForm').style.display = "block"; 
+    var res = prompt("How many would you like to order");
+    document.getElementById('theNo').innerHTML = res;
+    document.getElementById('theSize').innerHTML = mySize;
+    document.getElementById('theCrust').innerHTML = myCrust;
+    document.getElementById('theTop').innerHTML = myTop;
     document.getElementById('popForm').style.display = "block"; 
+
     }
 }
 
 function exitForm(){
     event.preventDefault()
     document.getElementById('popForm').style.display = "none";
+
+    document.getElementById('size-name').value="0";
+    document.getElementById('crust-name').value="0";
+    document.getElementById('top-name').value="0";
 
 }

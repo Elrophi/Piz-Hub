@@ -56,9 +56,9 @@
                             <label for="pizza-size">Size</label>
                             <select class="custom-select my-select btn-danger required" id="size-name" required>
                                 <option selected value="0">---none--</option>
-                                <option value="1">Small---600</option>
-                                <option value="2">Medium---800</option>
-                                <option value="3">Large---1200</option>
+                                <option value="Small">Small---600</option>
+                                <option value="Medium">Medium---800</option>
+                                <option value="Large">Large---1200</option>
                               </select>                            
                         </div>
 
@@ -66,22 +66,22 @@
                             <label for="pizza-crust">Crust</label>
                             <select class="custom-select my-select btn-danger required" id="crust-name" required>
                                 <option selected value="0">---none---</option>
-                                <option>Crust1</option>
-                                <option>Crust2</option>
-                                <option>Crust3</option>
-                                <option>Crust4</option>
-                                <option>Crust5</option>
+                                <option value="Crust1">Crust1</option>
+                                <option value="Crust2">Crust2</option>
+                                <option value="Crust3">Crust3</option>
+                                <option value="Crust4">Crust4</option>
+                                <option value="Crust5">Crust5</option>
                               </select>                            
                         </div>
                         <div class="col-md-4 col-sm-3 col-4">
                             <label for="pizza-topping">Tops</label>
                             <select class="custom-select my-select btn-danger required" id="top-name" required>
                                 <option selected value="0">---none---</option>
-                                <option>Topping1</option>
-                                <option>Topping2</option>
-                                <option>Topping3</option>
-                                <option>Topping4</option>
-                                <option>Topping5</option>
+                                <option value="Topping1">Topping1</option>
+                                <option value="Topping2">Topping2</option>
+                                <option value="Topping3">Topping3</option>
+                                <option value="Topping4">Topping4</option>
+                                <option value="Topping5">Topping5</option>
                               </select>                            
                         </div>
                         <div class="col-lg-12 btn-resp">
@@ -98,9 +98,11 @@
             <form action="" class="pop-form">
                 <h1 class="text-center text-white">Here is your order</h1> <hr>
                 <div class="">
-                <p class="text-white">Size: <span></span></p>
-                <p class="text-white">Crust: <span></span></p>
-                <p class="text-white">Toppings: <span></span></p>
+                <p class="text-white">Size: <span id="theSize"></span></p>
+                <p class="text-white">Crust: <span id="theCrust"></span></p>
+                <p class="text-white">Toppings: <span id="theTop"></span></p>
+                <p class="text-white">Number: <span id="theNo"></span></p>
+
                 </div>
                 <button class="btn btn-success rounded">ADD!</button>
                 <button class="btn btn-success rounded">CHECKOUT!</button>
