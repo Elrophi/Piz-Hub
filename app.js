@@ -22,10 +22,26 @@ $(document).ready(function(){
 })
 
 
+function Pizza(size, crust, topping){
+    this.size = size;
+    this.crust = crust;
+    this.topping = topping;
+}
+
 
 function myForm(){
     event.preventDefault()
-    document.getElementById('popForm').style.display = "block";
+
+    var mySize = document.getElementById('size-name').value;
+    var myCrust = document.getElementById('crust-name').value;
+    var myTop = document.getElementById('top-name').value;
+
+    let piz = new Pizza(mySize, myCrust, myTop);
+    if(mySize == "0"){
+        alert('please select size')
+    }else{
+    document.getElementById('popForm').style.display = "block"; 
+    }
 }
 
 function exitForm(){
