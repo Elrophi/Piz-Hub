@@ -13,3 +13,10 @@ $(document).ready(function(){
         $('.form-slide').slideToggle("fast")
     });
 })
+
+
+$(document).ready(function(){
+    $('.custom-select').click(function(){
+        $('.btn').show("slow")
+    });
+})

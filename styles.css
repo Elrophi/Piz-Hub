@@ -38,21 +38,38 @@ form{
 
 
 .custom-select{
-    text-indent: 50px;
+    text-indent: 30px;
 }
 
 
-@media screen and (max-width: 675px) {
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
     form{
-        min-width: 100%;
-        min-height: 75vh;
-        text-align: center;
+       max-height: 25vh;
+       font-size: 20px;
     }
 }
 
-/* @media screen and (max-width: 450px) {
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
     form{
-        min-width: 100%;
-        min-height: 55vh;
+        max-height: 30vh;
     }
-} */
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+    form{
+        min-height: 72vh;
+        width: 70%;
+    }
+}
+

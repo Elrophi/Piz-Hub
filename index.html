@@ -52,9 +52,9 @@
                 <form class="form-slide">
                     <h1 class="text-white font-weight-bold">Place your order</h1> <hr>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-4 col-4">
                             <label for="pizza-size">Size</label>
-                            <select class="custom-select my-select btn-danger" id="size-name">
+                            <select class="custom-select my-select btn-danger required" id="size-name" required>
                                 <option selected>---none--</option>
                                 <option>Small</option>
                                 <option>Medium</option>
@@ -62,9 +62,9 @@
                               </select>                            
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-4 col-4">
                             <label for="pizza-crust">Crust</label>
-                            <select class="custom-select text-center my-select btn-danger" id="crust-name">
+                            <select class="custom-select my-select btn-danger required" id="crust-name" required>
                                 <option selected>---none---</option>
                                 <option>Crust1</option>
                                 <option>Crust2</option>
@@ -73,9 +73,9 @@
                                 <option>Crust5</option>
                               </select>                            
                         </div>
-                        <div class="col-md-4">
-                            <label for="pizza-topping">Toppings</label>
-                            <select class="custom-select my-select btn-danger" id="top-name">
+                        <div class="col-md-4 col-sm-3 col-4">
+                            <label for="pizza-topping">Tops</label>
+                            <select class="custom-select my-select btn-danger required" id="top-name" required>
                                 <option selected>---none---</option>
                                 <option>Topping1</option>
                                 <option>Topping2</option>
@@ -84,15 +84,27 @@
                                 <option>Topping5</option>
                               </select>                            
                         </div>
-                        <div class="col btn-resp">
+                        <div class="col-lg-12 btn-resp">
                             <button id="btn-man" type="submit" class="btn btn-success mt-3 rounded">ORDER</button>
-                            <button id="btn-man" type="submit" class="btn btn-success mt-3 rounded">CHECKOUT</button>
+                            <!-- <button id="btn-man" type="submit" class="btn btn-success mt-3 rounded">CHECKOUT</button> -->
                         </div>
                     </div>
                 </form>
              </div>
         </section>
-
+        <div>
+            <form action="">
+                <h2 class="text-center">Here is your order</h2>
+                <div>
+                <p>Size: <span></span></p>
+                <p>Crust: <span></span></p>
+                <p>Toppings: <span></span></p>
+                </div>
+                <button type="submit" class="btn btn-success mt-3 rounded">ADD!</button>
+                <button type="submit" class="btn btn-success mt-3 rounded">CHECKOUT!</button>
+                <button type="submit" class="btn btn-success mt-3 rounded">CANCEL</button>
+            </form>
+        </div>
 
     
   
