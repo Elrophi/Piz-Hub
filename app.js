@@ -40,7 +40,7 @@ function myForm(){
     var myTop = document.getElementById('top-name').value;
 
     let piz = new Pizza(mySize, myCrust, myTop);
-    if(mySize == "0"){
+    if(mySize == "No"){
         alert('please select a size')
     }else{
     // document.getElementById('popForm').style.display = "block"; 

@@ -74,16 +74,19 @@
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
+@media (max-width: 540px) {
+    form{
+        min-height: 80vh;
+        width: 100%;
+    }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
     form{
-        min-height: 72vh;
-        width: 70%;
+        min-height: 80vh;
+        width: 100%;
     }
 }
 
