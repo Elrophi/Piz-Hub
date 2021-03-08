@@ -67,38 +67,38 @@ function myForm(){
 
     if(mySize == "Small" && add == "NO"){
         if(res){
-            document.getElementById('total').innerHTML = "kshs" + 800 + "*" + (res);
+            document.getElementById('total').innerHTML = "kshs " + 800 + " * " + (res);
         }else 
-        document.getElementById('total').innerHTML = "kshs" + 800 ; 
+        document.getElementById('total').innerHTML = "kshs " + 800 ; 
     }else if(mySize == "Medium" && add == "NO"){
         if(res){
-            document.getElementById('total').innerHTML = "kshs" + 1000 + "*" + (res); 
+            document.getElementById('total').innerHTML = "kshs " + 1000 + " * " + (res); 
         }else
-        document.getElementById('total').innerHTML = "kshs" + 1000; 
+        document.getElementById('total').innerHTML = "kshs " + 1000; 
 
     }else if(mySize == "Large" && add =="NO"){
         if(res){
-            document.getElementById('total').innerHTML = "kshs" + 1200 + "*" + (res); 
+            document.getElementById('total').innerHTML = "kshs " + 1200 + " * " + (res); 
         }else
-        document.getElementById('total').innerHTML = "kshs" + 1200; 
+        document.getElementById('total').innerHTML = "kshs " + 1200; 
 
     }else if(mySize == "Small"){
         if(res){
-            document.getElementById('total').innerHTML = "kshs" + 1050 + "*" + (res);
+            document.getElementById('total').innerHTML = "kshs " + 1050 + " * " + (res);
         }else
-        document.getElementById('total').innerHTML = 1050 + "kshs"; 
+        document.getElementById('total').innerHTML = 1050 + "kshs "; 
 
     }else if(mySize == "Medium"){
         if(res){
-            document.getElementById('total').innerHTML = "kshs" + 1250 + "*" + (res);
+            document.getElementById('total').innerHTML = "kshs " + 1250 + " * " + (res);
         }else
-        document.getElementById('total').innerHTML = "kshs" + 1250; 
+        document.getElementById('total').innerHTML = "kshs " + 1250; 
 
     }else if(mySize == "Large"){
         if(res){
-            document.getElementById('total').innerHTML = "kshs" + 1450 + "*" + (res);
+            document.getElementById('total').innerHTML = "kshs " + 1450 + " * " + (res);
         }
-        document.getElementById('total').innerHTML = "kshs" + 1450; 
+        document.getElementById('total').innerHTML = "kshs " + 1450; 
 
     }
     
