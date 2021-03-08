@@ -62,6 +62,25 @@ function myForm(){
         document.getElementById('popForm').style.display = "block"; 
     }
     }
+
+    if(mySize == "Small" && add == "NO"){
+        document.getElementById('total').innerHTML = 800 + "kshs"; 
+    }else if(mySize == "Medium" && add == "NO"){
+        document.getElementById('total').innerHTML = 1000 + "kshs"; 
+
+    }else if(mySize == "Large" && add =="NO"){
+        document.getElementById('total').innerHTML = 1200 + "kshs"; 
+
+    }else if(mySize == "Small"){
+        document.getElementById('total').innerHTML = 1050 + "kshs"; 
+
+    }else if(mySize == "Medium"){
+        document.getElementById('total').innerHTML = 1250 + "kshs"; 
+
+    }else if(mySize == "Large"){
+        document.getElementById('total').innerHTML = 1450 + "kshs"; 
+
+    }
     
 }
 
