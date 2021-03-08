@@ -79,7 +79,7 @@ function exitForm(){
 function checkout(){
     event.preventDefault()
     var name = prompt("enter your name");
-    document.getElementById('names').value = name;
+    document.getElementById('theName').innerHTML = "Boss "+ name + " Your request has been accepted give us 30mins";
 
 
 }
