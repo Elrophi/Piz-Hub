@@ -74,7 +74,7 @@
                               </select>                            
                         </div>
                         <div class="col-md-4 col-sm-3 col-4">
-                            <label for="pizza-Flavour">Tops</label>
+                            <label for="pizza-Flavour">Flavour</label>
                             <select class="custom-select my-select btn-danger required" id="top-name" required>
                                 <option selected value="No">---none---</option>
                                 <option value="Flavour1">Chicken Tikka</option>
@@ -92,15 +92,15 @@
                         </div>
                         <div class="col-md-3">
                             <label for="">Hawaiian</label>
-                            <input type="checkbox" name="one" id="ch1">
+                            <input type="checkbox" name="one" id="ch2" value="Hawaiian">
                         </div>
                         <div class="col-md-3">
                             <label for="">Be-Be-Qu</label>
-                            <input type="checkbox" name="one" id="ch1">
+                            <input type="checkbox" name="one" id="ch3" value="Be-Be-Qu">
                         </div>
                         <div class="col-md-3">
                             <label for="">HotSpicy</label>
-                            <input type="checkbox" name="one" id="ch1">
+                            <input type="checkbox" name="one" id="ch4" value="HotSpicy">
                         </div>
                         </div>
                         
@@ -118,12 +118,14 @@
             <form action="" class="pop-form">
                 <h1 class="text-center text-white">Here is your order</h1> <hr>
                 <div class="">
-                <p class="text-white text-center"><strong>Size:</strong> <span id="theSize"></span></p>
-                <p class="text-white text-center"><strong>Crust:</strong> <span id="theCrust"></span></p>
-                <p class="text-white text-center"><strong>Flavour:</strong> <span id="theTop"></span></p>
-                <p class="text-white text-center"><strong>Number:</strong> <span id="theNo"></span></p>
-                <p class="text-white text-center"><strong>Toppings:</strong> <span id="theTops"></span></p>
-                <p class="text-white text-center"><strong>Delivery:</strong> <span id="theDeliv"></span></p>
+                    <p class="text-white text-center"><strong>Size:</strong> <span id="theSize"></span></p>
+                    <p class="text-white text-center"><strong>Size:</strong> <span id="theSize"></span></p>
+                    <p class="text-white text-center"><strong>Crust:</strong> <span id="theCrust"></span></p>
+                    <p class="text-white text-center"><strong>Flavour:</strong> <span id="theTop"></span></p>
+                    <p class="text-white text-center"><strong>Number:</strong> <span id="theNo"></span></p>
+                    <p class="text-white text-center"><strong>Toppings:</strong> <span id="theTops"></span></p>
+                    <p class="text-white text-center"><strong>Delivery:</strong> <span id="theDeliv"></span></p>
+                    <p class="text-white text-center"><strong>Amount:</strong> <span id="total"></span></p>
             </div>
                 <button class="btn btn-success rounded">CHECKOUT!</button>
                 <button class="btn btn-success rounded" onclick="exitForm()">CANCEL</button>

@@ -37,22 +37,23 @@ function myForm(){
     var mySize = document.getElementById('size-name').value;
     var myCrust = document.getElementById('crust-name').value;
     var myTop = document.getElementById('top-name').value;
-    var myCheck = document.getElementById('ch1');
+    // var myCheck = document.getElementById('ch1');
 
-    let piz = new Pizza(mySize, myCrust, myTop, myCheck);
+    let piz = new Pizza(mySize, myCrust, myTop);
     if(myTop == "No" || mySize == "No"){
         alert('please select a size and flavour')
     }else{
     // document.getElementById('popForm').style.display = "block"; 
     var res = prompt("How many would you like to order");
-    var add = prompt("For delivery to your home enter your address (fee = 250kshs)! if not just type NO")
     if(res == 0){
+        alert("Pick a valid number")
         $('.form-slide').show()
         document.getElementById('size-name').value="No";
         document.getElementById('crust-name').value="No";
         document.getElementById('top-name').value="No";
-        document.getElementById('ch1').value = "";
+        // document.getElementById('ch1').value = "";
     }else{
+        var add = prompt("For delivery to your home enter your address (fee = 250kshs)! if not just type NO")
         document.getElementById('theDeliv').innerHTML = add;
         document.getElementById('theNo').innerHTML = res;
         document.getElementById('theSize').innerHTML = mySize;
@@ -65,21 +66,31 @@ function myForm(){
 }
 
 function exitForm(){
-    event.preventDefault()
     document.getElementById('popForm').style.display = "none";
+    document.getElementById('form-slide').reset();
 
     document.getElementById('size-name').value="0";
     document.getElementById('crust-name').value="0";
     document.getElementById('top-name').value="0";
-    document.getElementById('ch1').value = "";
+    
+
+}
+
+function checkout(){
+    event.preventDefault()
+    var name = prompt("enter your name");
+    document.getElementById('names').value = name;
 
 
 }
 
+$('.btn').on('click', function() { 
+    var arr = []; 
+    $("input:checked").each(function() { 
+        arr.push($(this).val()); 
+    }); 
+    $('#theTops').text(arr.join(", ")); 
+}); 
 
 
-// var markedCheckbox = document.getElementsById('ch1').value;  
-//         for (var checkbox of markedCheckbox) {  
-//           if (checkbox.checked)  
-//             document.getElementById('theTops').value = checkbox;  
-//       }  
+ 
