@@ -66,21 +66,39 @@ function myForm(){
     var final = total * res;
 
     if(mySize == "Small" && add == "NO"){
-        document.getElementById('total').innerHTML = 800 + "kshs"; 
+        if(res){
+            document.getElementById('total').innerHTML = "kshs" + 800 + "*" + (res);
+        }else 
+        document.getElementById('total').innerHTML = "kshs" + 800 ; 
     }else if(mySize == "Medium" && add == "NO"){
-        document.getElementById('total').innerHTML = 1000 + "kshs"; 
+        if(res){
+            document.getElementById('total').innerHTML = "kshs" + 1000 + "*" + (res); 
+        }else
+        document.getElementById('total').innerHTML = "kshs" + 1000; 
 
     }else if(mySize == "Large" && add =="NO"){
-        document.getElementById('total').innerHTML = 1200 + "kshs"; 
+        if(res){
+            document.getElementById('total').innerHTML = "kshs" + 1200 + "*" + (res); 
+        }else
+        document.getElementById('total').innerHTML = "kshs" + 1200; 
 
     }else if(mySize == "Small"){
+        if(res){
+            document.getElementById('total').innerHTML = "kshs" + 1050 + "*" + (res);
+        }else
         document.getElementById('total').innerHTML = 1050 + "kshs"; 
 
     }else if(mySize == "Medium"){
-        document.getElementById('total').innerHTML = 1250 + "kshs"; 
+        if(res){
+            document.getElementById('total').innerHTML = "kshs" + 1250 + "*" + (res);
+        }else
+        document.getElementById('total').innerHTML = "kshs" + 1250; 
 
     }else if(mySize == "Large"){
-        document.getElementById('total').innerHTML = 1450 + "kshs"; 
+        if(res){
+            document.getElementById('total').innerHTML = "kshs" + 1450 + "*" + (res);
+        }
+        document.getElementById('total').innerHTML = "kshs" + 1450; 
 
     }
     
