@@ -90,11 +90,4 @@
     }
 }
 
-@media (max-width: 320px) {
-
-    form{
-        max-height: 90vh;
-        width: 100%;
-    }
-}
 
