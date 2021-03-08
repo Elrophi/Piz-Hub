@@ -63,6 +63,8 @@ function myForm(){
     }
     }
 
+    var final = total * res;
+
     if(mySize == "Small" && add == "NO"){
         document.getElementById('total').innerHTML = 800 + "kshs"; 
     }else if(mySize == "Medium" && add == "NO"){
