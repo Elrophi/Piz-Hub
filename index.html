@@ -56,9 +56,9 @@
                             <label for="pizza-size">Size</label>
                             <select class="custom-select my-select btn-danger required" id="size-name" required>
                                 <option selected value="No">---none--</option>
-                                <option value="Small">Small---600</option>
-                                <option value="Medium">Medium---800</option>
-                                <option value="Large">Large---1200</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
                               </select>                            
                         </div>
 
@@ -66,43 +66,44 @@
                             <label for="pizza-crust">Crust</label>
                             <select class="custom-select my-select btn-danger required" id="crust-name" required>
                                 <option selected value="No">---none---</option>
-                                <option value="Crust1">Crust1</option>
-                                <option value="Crust2">Crust2</option>
-                                <option value="Crust3">Crust3</option>
-                                <option value="Crust4">Crust4</option>
-                                <option value="Crust5">Crust5</option>
+                                <option value="Crust1">Deep Dish</option>
+                                <option value="Crust2">New York Style</option>
+                                <option value="Crust3">Sicilian</option>
+                                <option value="Crust4">Neapolitan</option>
+                                <option value="Crust5">Traditional pan</option>
                               </select>                            
                         </div>
                         <div class="col-md-4 col-sm-3 col-4">
                             <label for="pizza-Flavour">Tops</label>
                             <select class="custom-select my-select btn-danger required" id="top-name" required>
                                 <option selected value="No">---none---</option>
-                                <option value="Flavour1">Flavour1</option>
-                                <option value="Flavour2">Flavour2</option>
-                                <option value="Flavour3">Flavour3</option>
-                                <option value="Flavour4">Flavour4</option>
-                                <option value="Flavour5">Flavour5</option>
+                                <option value="Flavour1">Chicken Tikka</option>
+                                <option value="Flavour2">Sunchoke</option>
+                                <option value="Flavour3">Buffalo Chicken sticks</option>
+                                <option value="Flavour4">PeriPeri</option>
+                                <option value="Flavour5">Chicken Alfredo</option>
                               </select>                            
                         </div>
                         <h2>Toppings</h2>
                         <div class="row">
                         <div class="col-md-3 ">
                             <label for="">Pepperoni</label>
-                            <input type="checkbox" name="one" id="ch1">
+                            <input type="checkbox" name="one" id="ch1" value="Pepperoni">
                         </div>
                         <div class="col-md-3">
                             <label for="">Hawaiian</label>
-                            <input type="checkbox" name="one" id="ch2">
+                            <input type="checkbox" name="one" id="ch1">
                         </div>
                         <div class="col-md-3">
                             <label for="">Be-Be-Qu</label>
-                            <input type="checkbox" name="one" id="ch3">
+                            <input type="checkbox" name="one" id="ch1">
                         </div>
                         <div class="col-md-3">
                             <label for="">HotSpicy</label>
-                            <input type="checkbox" name="one" id="ch4">
+                            <input type="checkbox" name="one" id="ch1">
                         </div>
                         </div>
+                        
                         <div class="col-lg-12 btn-resp">
                             <button id="btn-man" class="btn btn-success mt-3 rounded" onclick="myForm()">ORDER</button>
                             <!-- <button id="btn-man" type="submit" class="btn btn-success mt-3 rounded">CHECKOUT</button> -->
@@ -117,17 +118,16 @@
             <form action="" class="pop-form">
                 <h1 class="text-center text-white">Here is your order</h1> <hr>
                 <div class="">
-                <p class="text-white">Size: <span id="theSize"></span></p>
-                <p class="text-white">Crust: <span id="theCrust"></span></p>
-                <p class="text-white">Flavour: <span id="theTop"></span></p>
-                <p class="text-white">Number: <span id="theNo"></span></p>
-                <p class="text-white">Toppings: <span id="theTops"></span></p>
-                </div>
-                <button class="btn btn-success rounded">ADD!</button>
+                <p class="text-white text-center"><strong>Size:</strong> <span id="theSize"></span></p>
+                <p class="text-white text-center"><strong>Crust:</strong> <span id="theCrust"></span></p>
+                <p class="text-white text-center"><strong>Flavour:</strong> <span id="theTop"></span></p>
+                <p class="text-white text-center"><strong>Number:</strong> <span id="theNo"></span></p>
+                <p class="text-white text-center"><strong>Toppings:</strong> <span id="theTops"></span></p>
+                <p class="text-white text-center"><strong>Delivery:</strong> <span id="theDeliv"></span></p>
+            </div>
                 <button class="btn btn-success rounded">CHECKOUT!</button>
                 <button class="btn btn-success rounded" onclick="exitForm()">CANCEL</button>
             </form>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti saepe, tempora amet quae deserunt recusandae nulla provident sequi, quas eos rerum! Harum, itaque rem. Facere, cum? Deleniti quae possimus repudiandae?</p>
         </div>
     </section>
 
